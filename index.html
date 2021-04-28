@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=380, user-scalable=yes">
+		<title></title>
+		<script  src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/mobile.css" rel="stylesheet">
+		<script type="text/javascript" src="js/javascript.js"></script>
+
+	</head>
+	<body>
+		
+			<div class="header">
+				<div class="center">
+					<div class="logo"><a href=""><img src="images/logo.svg" /></a></div>
+					<div class="phone"><a href="tel:+380992547854">099 254 78 54</a></div>
+					<div class="main_menu">
+						<ul>
+							<li><a href="#" class="active">Главная</a></li>
+							<li><a href="#">Заявка</a></li>
+							<li><a href="#">Как пользоваться</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="one_page">
+				<div class="center">
+					<div class="one_page_img"><img src="images/one_page.png" /></div>
+					<div class="one_page_text">
+						<div class="one_page_title">Возьми самокат с собой в отпуск!</div>
+						<div class="one_page_subtitle">Кто сказал, что яркие эмоции нельзя взять в аренду?</div>
+						<div class="one_page_btn"><a href="">Поехали!</a></div>
+					</div>
+					
+					<div class="one_page_bottom">
+						<div class="one_page_soc">
+							<ul>
+								<li><a href=""><img src="images/soc_1.png" ></a></li>
+								<li><a href=""><img src="images/soc_2.png" ></a></li>
+								<li><a href=""><img src="images/soc_3.png" ></a></li>
+							</ul>
+						</div>
+						<div class="bottom_icon"><a href="#"><img src="images/arrow_icon.png" ></a></div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="action">
+				<div class="center">
+					<div class="title">ЗАЯВКА</div>
+					<div class="action_form">
+						<form>
+							<input class="text name" type="text" placeholder="Имя"> 
+							<input class="text email" type="text" placeholder="E-mail"> 
+							<input class="text adres" type="text" placeholder="Адрес">
+							<select class="select">
+							  <option>Неделя</option>
+							  <option>2 Недели</option>
+							  <option>Месяц</option>
+							</select>
+							<input class="text price" type="text" placeholder="7 дней - 3000Р" readonly>
+							<input class="text data"  type="text" placeholder="ДД.ММ.ГГ">
+							<input class="text time" type="text" placeholder="Время">
+							<label class="accept"><input type="checkbox" name="accept" value="1" aria-invalid="false"><span>Согласен с условиями договора аренды</span></label>
+							<input class="submit" type="submit" value="Отправить">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="procat">
+				<div class="center">
+					<div class="title">КАК ПОЛЬЗОВАТЬСЯ ПРОКАТОМ</div>
+					
+					<div class="procat_img"><img src="images/procat.png" /></div>
+					<div class="procat_items">
+						<div class="procat_item">
+							<div class="procat_item_num">1</div>
+							<div class="procat_item_name">Заказ</div>
+							<div class="procat_item_desk">Оставляете<br/> заявку.</div>
+						</div>
+						<div class="procat_item">
+							<div class="procat_item_num">2</div>
+							<div class="procat_item_name">Оплата</div>
+							<div class="procat_item_desk">Заполняете бланк проката.<br/> Оплачиваете аренду.</div>
+						</div>
+						<div class="procat_item">
+							<div class="procat_item_num">3</div>
+							<div class="procat_item_name">Выдача</div>
+							<div class="procat_item_desk">Самокат выдается чистый,<br/> исправный, заряженный.</div>
+						</div>
+						<div class="procat_item">
+							<div class="procat_item_num">4</div>
+							<div class="procat_item_name">Возврат</div>
+							<div class="procat_item_desk">Вы сдаёте самокат в оговоренное<br/> заранее время или продлеваете.</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="footer">
+				<div class="center">
+					<div class="asq">
+						<div class="title">ОСТАЛИСЬ ВОПРОСЫ?</div>
+						<div class="phone"><a href="tel:+380992547854">099 254 78 54</a></div>
+					</div>
+					<div class="footer_form">
+						<form>
+							<input class="text name" type="text" placeholder="Телефон">
+							<input class="submit" type="submit" value="Заказать звонок">
+						</form>
+					</div>
+					<div class="soon_app">
+						<div class="title">СКОРО</div>
+							<a href="#"><img src="images/google_app.png" ></a>
+							<a href="#"><img src="images/iphone_app.png" ></a>
+					</div>
+				</div>
+			</div>
+		
+		
+		<script>
+		
+		$(window).scroll(function() {
+var height = $(window).scrollTop();
+ /*Если сделали скролл на 100px задаём новый класс для header*/
+if(height > 1){
+$('.header').addClass('header-fixed');
+} else{
+/*Если меньше 100px удаляем класс для header*/
+$('.header').removeClass('header-fixed');
+}
+});
+		
+		</script>
+	
+	</body>
+</html>
